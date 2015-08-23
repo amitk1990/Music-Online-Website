@@ -1,0 +1,749 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: #4e4e4e;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*index css*/
+.wrapper
+{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.header
+{
+	width: 100%;
+	height: 74px;
+	float: left;
+	background: #4e4e4e; 
+}
+
+.logo
+{
+	float: left;
+	margin:0px 0px 0px 100px;
+}
+.nav
+{
+	width: 100%;
+	height: 30px;
+	float: left;
+	background: #000;
+}
+.Banner
+{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin:0px 0px 0px 0px;
+	background: #4e4e4e; 	
+}
+.bannerImg
+{
+	margin-left: 100px;
+	float: left;
+}
+.signUp
+{
+	width: 200px;
+	float: left;
+	height: 150px;
+	
+	margin: 75px 0px 0px 30px;
+}
+.signuser,.signartist
+{
+	width: 100%;
+	height: 40px;
+	float: left;
+	background: #3d3d3d;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.signuser:hover,.signartist:hover,.rsvp:hover
+{
+	background: #000;
+}
+.signuser a,.signartist a
+{
+	font: 13px verdana;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	float: left;
+	margin: 10px 0px 0px 50px;
+}
+.content
+{
+	width: 100%;
+	height: auto;
+	float: left;
+
+}
+.left-content
+{
+	width: 100px;
+	height:130px;
+	float: left;
+	background: #4e4e4e; 
+}
+.middle-content
+{
+	width: 1000px;
+	height: 130px;
+	float: left;
+	border-bottom: 1px solid #ccc;
+}
+.middle-content h1,
+.right-content h1
+{
+	float: left;
+	color: #FFF;
+	margin: 30px 0px 0px 10px;
+}
+.middle-content p
+{
+	float: left;
+	color: #FFF;
+	margin: 10px;
+	width: 100%;
+	height: auto;
+	font: 12px verdana;
+}
+.right-content
+{
+	width: 208px;
+	float: left;
+	height: 130px;
+}
+.right-content h2
+{
+	float: left;
+	color: #FFF;
+	margin: 5px 0px 0px 15px;
+	width: 100%;
+	height: auto;
+	font: 12px verdana;
+}
+.footer
+{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.wifooterdthalign
+{
+	width: 225px;
+	color: #FFF;
+	margin: 15px;
+	height: auto !important;
+	margin-left: 100px;
+	border-right: 1px solid #fff;
+
+}
+.wifooterdthalign a,.wifooterdthalign h2
+{
+	color: #fff;
+
+	text-decoration:none;
+	font: 12px verdana;
+	margin-top: 20px;
+	float: left;
+	padding-right: 15px;
+	display: block;
+	clear: left;
+}
+.contactUs
+{
+	width: 200px;
+	height: auto;
+	float: left;
+}
+.contactUs h1
+{
+	float: left;
+	color: #FFF;
+	margin: 30px 0px 0px 10px;
+}
+.social-network
+{
+	width: 250px;
+	float: left;
+	height: auto;
+	border-right: 1px solid #fff;
+	margin: 15px;
+	height: 50px;
+
+}
+.social-network h1
+{
+	float: left;
+	margin: 0px 0px 0px 0px;
+	color: #fff;
+	
+}
+.socialnet
+{
+	width: 27px;
+	height: 27px;
+	float: left;
+	background: url('../assets/fbk.png');
+	margin-top: 10px;
+	display: inline-block;
+	margin-right: 20px;
+
+}
+.twitter
+{
+	background: url('../assets/twit.png');
+}
+.youtube
+{
+	background: url('../assets/youtube.png');
+}
+.rightcontainer {
+width: 893px;
+height: 60px;
+float: right;
+margin-top: 5px;
+}
+.signIN,.signUP
+{
+	display: block;
+	width: 100%;
+	height: 30px;
+}
+.signIN label,.signUP label
+{
+	float: left;
+	color: #fff;
+	margin-left: 10px;
+}
+
+.signIN input[type="text"],.signIN input[type="password"]
+{
+	margin-left: 5px;
+	float: left;
+	width: 180px;
+	margin-left: 10px;
+
+}
+.signUP label
+{
+	width: 100px;
+}
+.signUP input[type="text"],.signUP input[type="password"]
+{
+	margin-left: 5px;
+	float: left;
+	width: 180px;
+	margin-left: 10px;
+}
+.signIN input[type="text"]
+{
+	margin-left: 32px;
+}
+
+/*user registration page*/
+.signUpDetails
+{
+	width: 80%;
+	height: 345px;
+	float: left;
+	margin-left: 10px;
+}
+.submitButton
+{
+	width: 70px;
+	height: 20px;
+	float: left;
+	cursor: pointer;
+	margin-left: 5px;
+	background: #ccc;
+	border: none;
+}
+.signUpDetails h1
+{
+	margin:10px 0px 0px 100px;
+	color: #fff;
+	font-weight: bold;
+}
+.fillform
+{
+	width: 80%;
+	height: 300px;
+	float: left;
+	margin:10px 0px 0px 100px;
+}
+.signalign
+{
+	width: 80%;
+	margin-left: 10px;
+}
+.signupButton
+{
+	width: 90px;
+	height: 20px;
+	border-radius: 10px;
+	float: left;
+	margin: 15px 0px 0px 80px;
+	text-align: center;
+	color: #000;
+	background: #ccc;
+	border: none;
+	cursor: pointer;
+}
+.genreSelect
+{
+	width: 180px;
+	height: 75px;
+	float: left;
+	margin-left:10px; 
+	font: 12px verdana !important;
+}
+.red,.required
+{
+	color: red;
+	font: 12px verdana;
+	margin-left: 5px;
+}
+.required
+{
+	display: none;
+}
+.concertInfo
+{
+	width: 100%;
+	height: 345px;
+	float: left;
+	
+	overflow: auto;
+}
+.concertInfo ul li
+{
+ 	width: auto;
+ 	height: auto;
+ 	float: left;
+ 	margin:10px 0px 0px 15px;
+ 	color: #fff;
+}
+.concertInfo ul li span
+{
+	margin-left: 5px;
+}
+.edit,.logout
+{
+	width: 100px;
+	height: 30px;
+	float: left;
+	margin: 10px 0px 0px 70px;
+	background: #aeaeae	;
+	border: none;
+	color: #000;
+	cursor: pointer;
+}
+.edit:hover,.logout:hover
+{
+	background: #000;
+	color: #fff;
+}
+.logout
+{
+margin: 10px 0px 0px 20px;
+}
+/*.concertInfo
+{
+	display: none;
+}*/
+.editprofile
+{
+	width: 100% !important;
+	height: 100% !important;
+	float: left;
+	border: 1px solid #ccc;
+	
+}
+.settings
+{
+	width: 50%;
+	height: 20px;
+	margin: 10px 0px 0px 0px;
+	
+}
+.settings label
+{
+	font: 12px verdana !important;
+	float: left;
+}
+.htextbox
+{
+	width: 100px;
+	height: 15px;
+	float: left;
+	font: 12px verdana !important;
+
+}
+.checkboxgenre
+{
+	float: left;
+
+}
+.genrename
+{
+	float: left;
+	width: auto;
+	height: auto;
+	margin: 0px 10px 0px 10px;
+}
+.savebtn
+{
+	width: 70px;
+	height: 30px;
+	float: left;
+	cursor: pointer;
+
+}
+
+#invalid
+{
+	display: none;
+}
+.regfail
+{
+color: white;
+float: left;
+clear: left;
+margin: 19px 0px 0px 0px;
+display: none;
+}
+.bio
+{
+	float: left;
+	margin-left: 10px;
+	height: 30px;
+	resize:none;
+}
+.signinArtist
+{
+	margin:10px 0px 0px 0px;
+	height: 40px;
+}
+.profileContainer
+{
+	width: 90%;
+	height: 354px;
+	float: left;
+	/*border: 1px solid #ccc;*/
+}
+
+.profileinforow1
+{
+	width: 50%;
+	height: 30px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+.profileinforow1 span
+{
+	color: #fff;
+}
+.followButton
+{
+	float: left;
+	margin: 10px 30px 0px;
+	width: 70px;
+	height:25px;
+	cursor: pointer;
+	background: #acacac; 
+	color: #fff;
+	border:none;
+}
+.followButton:hover
+{
+	background: #000;
+	color: #fff;
+}
+.datasaved
+{
+	color: red;
+	margin: 10px 0px 0px 0px;
+	display: none;
+}
+.alignleft
+{
+	margin-left: 20px;
+}
+
+.searchBox
+{
+		width: 100px;
+		height: 20px;
+		float: right;
+		margin-right: 10px;
+		margin-top: 12px;
+}
+.searchbtn
+{
+		width: 70px;
+		height: 20px;
+		float: right;
+		margin-right: 20px;
+		margin-top: 15px;
+		cursor: pointer;
+		background: #ccc;
+		border:none;
+		color: #fff;
+}
+.searchbtn:hover
+{
+	background: #000;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*accordion style dont change*/
+#accordion .ui-accordion-content {  
+   
+    background-color: #cccccc;  
+
+    font-size: 12px;  
+   
+} 
+.ui-accordion .ui-accordion-icons
+{
+ background-color: #cccccc;  
+}
+.ratinglabel
+{
+	float: left;
+	width: 200px;
+	height: 30px;
+	color:#fff;
+}
+.textrate
+{
+	float: left;
+	background: #ccc;
+	width: 256px;
+height: 40px;
+}
+.selectbox
+{
+	background: #ccc;
+	float: left;
+}
+.tweets
+{
+	width: 100%;
+	height: 30px;
+	float: left;
+}
+.tweets li
+{
+	/*width: 170px !important;
+*/}
+.conclick
+{
+	width: 100px;
+	height: auto;
+	cursor: pointer;
+	background: #ccc;
+}
+.likimg
+{
+	width: 50px;
+	height: 17px;
+	background: url('../Script/fb.jpg') no-repeat;
+	background-size: 50px 17px;
+	color:transparent;
+}
+.rsvp
+{
+	width: 100px;
+float: left;
+height: 20px;
+margin-left: 2px;
+cursor: pointer;
+color: #fff;
+border: none;
+background: #aeaeae;
+clear: left;
+}
+.Or
+{
+	text-align: center;
+	float: left;
+	color: #fff;
+	list-style: none;
+	width: 51%;
+	height: 20px;
+}
+.attended
+{
+	background: green;
+	color: #fff;
+}
+.searchdiv
+{
+	width: 100%;
+	height: 345px;
+	float: left;
+	overflow: auto;
+	border:1px solid #ccc;
+
+}
+.profiledet{
+	
+	width: 10%;
+	height: 30px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+
+}
+.profiledet span
+{
+	color: #fff;
+}
+.listofRecommender
+{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.listofRecommender h1
+{
+	float: left;
+	margin-left: 40px;
+}
+
+.NAMES
+{
+	width: 100px;
+height: 20px;
+float: left;
+margin: 16px 0px 0px 40px;
+color: #fff;
+}
+.brow
+{
+	width: 80% !important;
+}
+.brow span
+{
+	width: 200px;
+	float: left;
+	margin-top: 5px;
+}
+.radiobutton
+{
+	float: left;
+	margin-left: 10px;
+}
+.subgname
+{
+	float: left;
+
+}
+.alignmarginleft
+{
+	margin-left: 0px;
+	margin-right: 2px;
+}
+.post
+{
+	width:100px;
+	float: left;
+	height: 20px;
+	cursor: pointer;
+	margin:10px 0px 0px 100px;
+}
+.widthbrow
+{
+	width: 80% !important;
+	height: 40px;
+	float: left;
+	margin-left: 39px
+}
+.white
+{
+	color: #fff;
+}
+.rconc
+{
+	float: left;
+	margin-left: 40px;
+	width: auto;
+	height: auto;
+	color: #fff;
+	margin-top: 10px;
+}
+.appendbands
+{
+	height: 200px;
+	overflow: auto;
+}

@@ -1,0 +1,12 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `create_or_edit_personal`(
+in user varchar(20),
+in username	varchar(20),
+in yr	year(4),
+in cty	varchar(20),
+in pswd	varchar(20),
+inout update_user_flag int)
+begin 
+if update_user_flag=1 then
+	update user set uname = username, yob=yr, city = cty, pwd = pswd where userid=user;	
+end if;
+end

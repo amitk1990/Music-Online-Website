@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Musical Connection</title>
+ 		<link rel="stylesheet" href="css/style.css" type="text/css" />
+ 		<script type="text/javascript" src="Script/jquery.js"></script>
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		
+		<script src="Script/jquery-ui.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(e){
+
+			 $( "#accordion" ).accordion();
+			 $('#accordion').hide();
+		});	
+    		
+  	
+		</script>
+	</head>
+ 
+<body id="index" class="home">
+	<div class="wrapper">
+		<div class="header">
+
+			<img src="assets/logo.jpg" alt="logo" class="logo" />
+
+			<div class="rightcontainer">
+				
+				<input type="button" class="edit" value="Home" id="homeprofile" />
+				<input type="button" class="logout" value="logout" id="logoutbutton" />
+
+			</div>
+
+		</div>
+		<div class="nav">
+
+		</div>
+		<div class="Banner">
+	
+			<div class="left-content">
+			</div>
+			<div class="signUpDetails" id="concertTweet">
+
+				<!-- <div class="concertInfo" id="concertfeed">
+					<ul>
+						<li><span>Concert Name</span><span>Concert1</span></li>
+						<li><span>Band Name</span><span>Band1</span></li>
+						<li><span>Genre Name</span><span>Jazz</span></li>
+						<li><span>Venue</span><span>New Jersey</span></li>
+						<li><span>Ticket Sold</span><span>200</span></li>
+					</ul>
+				</div> -->
+				<div class="profileContainer" id="concertfeed">
+				<form name="rsvp" id="rsvp">
+				<ul>
+					<li class="profileinforow1" style="list-style:none;">
+								<input type="hidden" name="dname" value="" class="passlink" />
+								<label class="ratinglabel">Do you want RSVP Concert ? </label>
+								<input type="submit" value="RSVP" class="rsvp" name="rsvp" id="rbut" />
+					</li>
+					<li class="profileinforow1" style="list-style:none;">
+					</li>
+					<li class="profileinforow1" style="list-style:none;">
+					<label for="OR" class="Or">OR</label>
+					</li>
+				</ul>
+				</form>
+				<form name="ratingdetails" method="get" id="formrate"  >
+						<ul>
+						<li class="profileinforow1" style="list-style:none;">
+					<label for="OR" class="Or" style="text-align:left;">RATE THE CONCERT</label>
+					</li>
+						<li class="profileinforow1">
+								<label for="OR" class="ratinglabel">Concert Name</label>
+								<span class="pname" id="nameConcert"></span>
+						</li>
+						<li class="profileinforow1">
+
+								<label class="ratinglabel">Rate the Concert </label>
+								<select class="selectbox" name="rating">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								</select>
+						</li>
+						<li class="profileinforow1">
+								<input type="hidden" name="dname" value="" id="passlink"/>
+								<label class="ratinglabel">Review the Concert </label>
+								<textarea name="review" cols="10" class="textrate"></textarea>
+						</li>
+						<li class="profileinforow1">
+
+								<input type="submit" value="Save" class="followButton"   />
+						</li>
+						</ul>
+				</form>
+
+				<p class="datasaved"> Your Data is saved successfully</p>
+				</div>
+					
+			
+			  
+			 
+</div>
+
+			
+		</div>
+		<div class="content">
+			<div class="left-content">
+			</div>
+			<div class="middle-content">
+				<h1 style="text-decoration:underline" >ABOUT US</h1>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</div>
+			<div class="right-content">
+				<h1 style="margin-top:32px;text-decoration:underline">Latest Upcoming Events </h1>
+					<h2>New York City Music festival</h2>
+					<h2>November 30 ,2014 </h2>
+					<h2>Venue : Madison Square Garden</h2>
+			</div>
+
+		</div>
+		<div class="footer">
+			<div class="left-content wifooterdthalign">
+				<h1>Subscribe to Us</h1>
+				<a href="mailto:amitk26467@gmail.com">musicalConnections@gmail.com</a>
+			</div>
+			<div class="left-content wifooterdthalign" style="margin-left:0px">
+				<h1>Contact Us</h1>
+				<h2>123-456-7890</h2>
+			</div>
+			<div class="left-content social-network" style="margin-left:0px">
+				<h1>Follow Us</h1>
+				<a href="https://www.facebook.com/Connectionsoriginalmusicall" class="socialnet" style="clear:left"></a>
+				<a href="https://twitter.com/music" class="socialnet twitter"></a>
+				<a href="http://www.youtube.com/user/FlyingBalalaikaBros" class="socialnet youtube"></a>
+			</div>
+			<div class="left-content wifooterdthalign" style="margin-left:0px">
+				<h2 style="margin-top:0px;font-size:14px">Copyrights reserved 2014.</h2>
+				<h2 style="margin-top:5px;font-size:10px">Developed and managed by Amit and Chaithra</h2>
+
+
+			</div>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(e){
+
+		//$( "#editprofiletab" ).accordion();
+		
+
+
+/*retrieve the concert which is clicked*/
+		$(window).on('load',function(e){
+			//alert("hi");
+			$('.datasaved').hide();
+
+		function getParameterByName( name,href )
+		{
+		  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+		  var regexS = "[\\?&]"+name+"=([^&#]*)";
+		  var regex = new RegExp( regexS );
+		  var results = regex.exec( href );
+		  if( results == null )
+		    return "";
+		  else
+		    return decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+
+
+			var link=window.location.href;
+			var validationsuccess=getParameterByName("cname",link);
+			$('#nameConcert').text(validationsuccess);
+			$('#passlink').val(validationsuccess);
+			$('.passlink').val(validationsuccess);
+			/*ajax call to retrive the contents of rating*/
+			/*var url="http://localhost/DB-Final-Project/Script/ratingpopulate.php?cname=";
+			var values=validationsuccess;
+			console.log(url+values);
+			
+			 /*$.ajax({
+				        url: "Script/ratingpopulate.php",
+				        type: "get",
+				        data: url+values,
+				        success: function(response){
+						
+						alert("success"); 
+						var array = JSON.parse(response);
+
+						var rating=array.rating;
+						var review=array.review;
+						
+						
+				        },
+				        error:function(){
+				            alert("failure");
+				            //$("#result").html('There is error while submit');
+				        }
+			});*/
+				
+		});
+
+		$('#formrate').on('submit',function(e){
+
+
+					event.preventDefault();
+					
+				  
+				    var values = $(this).serialize();
+				    alert(values);
+			
+				    $.ajax({
+				        url: "Script/retrieveRating.php",
+				        type: "get",
+				        data: values,
+				        success: function(results){
+						alert("success");
+						$('.datasaved').show();
+
+				        },
+				        error:function(){
+				            alert("failure");
+				            //$("#result").html('There is error while submit');
+				        }
+				    });
+
+
+		});
+
+		$('#homeprofile').on('click',function(e){
+
+		document.location.href="http://localhost/DB-Final-Project/homePage.php";
+		});
+
+	
+		$('#rsvp').on('submit',function(e){
+
+
+					event.preventDefault();
+					
+				  
+				    var values = $(this).serialize();
+				    alert(values);
+			
+				    $.ajax({
+				        url: "Script/rsvp.php",
+				        type: "get",
+				        data: values,
+				        success: function(results){
+						alert("success");
+						$('#rbut').addClass("attended");
+						$('#rbut').prop('disabled', true);
+						$('#rbut').unbind('mouseenter mouseleave');
+						//$('.datasaved').show();
+
+				        },
+				        error:function(){
+				            alert("failure");
+				            //$("#result").html('There is error while submit');
+				        }
+				    });
+		});
+
+
+			
+	});
+</script>
+</html>

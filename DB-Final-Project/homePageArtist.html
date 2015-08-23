@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Musical Connection</title>
+ 		<link rel="stylesheet" href="css/style.css" type="text/css" />
+ 		<script type="text/javascript" src="Script/jquery.js"></script>
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		
+		<script src="Script/jquery-ui.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(e){
+
+			 $( "#accordion" ).accordion();
+			 $('#accordion').hide();
+		});	
+    		
+  	
+		</script>
+	</head>
+ 
+<body id="index" class="home">
+	<div class="wrapper">
+		<div class="header">
+
+			<img src="assets/logo.jpg" alt="logo" class="logo" />
+
+			<div class="rightcontainer">
+				
+				<input type="button" class="edit" value="Edit Profile" id="editprofile" />
+				<input type="button" class="logout" value="logout" id="logoutbutton" />
+
+			</div>
+
+		</div>
+		<div class="nav">
+
+		</div>
+		<div class="Banner">
+	
+			<div class="left-content">
+			</div>
+			<div class="signUpDetails" id="concertTweet">
+
+				<div class="concertInfo" id="concertfeed">
+					<ul>
+						<li><span>Concert Name</span><span>Concert1</span></li>
+						<li><span>Band Name</span><span>Band1</span></li>
+						<li><span>Genre Name</span><span>Jazz</span></li>
+						<li><span>Venue</span><span>New Jersey</span></li>
+						<li><span>Ticket Sold</span><span>200</span></li>
+					</ul>
+				</div>
+					
+			<div class="editprofile" id="accordion">
+			  <h3>Personal</h3>
+			  <div>
+			    
+			    <form name="editform" method="get" action="save.php">
+			    	<ul>
+			    		<li class="settings">
+			    		<label style="width:100px;">UserName</label>
+			    		<input type="text" value="" class="htextbox" name="newname" />
+			    		</li>
+			    		<li class="settings">
+			    		<label style="width:100px;">Year Of Birth</label>
+			    		<input type="text" value="" class="htextbox" name="newyear" />
+			    		</li>
+			    		<li class="settings">
+			    		<label style="width:100px;">City</label>
+			    		<input type="text" value="" class="htextbox" name="newcity" />
+			    		</li>
+			    		<li class="settings">
+			    		<label style="width:100px;">Password</label>
+			    		<input type="password" value="" class="htextbox" name="newpwd" />
+			    		</li>
+			    		<li class="settings" style="height:40px;">
+			    		<label style="width:100px;">Bio</label>
+			    		<textarea  cols="40" name="bio"  style="resize:none;"></textarea>
+			    		</li>
+			    		<li class="settings ">
+			    		<input type="submit" value="Save" class="savebtn"/>
+			    		</li>
+			    	</ul>
+			    </form>
+			  </div>
+			  <h3>Band Type</h3>
+			  <div>
+			  <form name="interest" method="get" action="">
+			   	<ul>
+			   		<li class="settings">
+			   						<label for="Genre" style="clear:left;">
+										Genre
+									</label>
+					</li>
+					<li class="settings">
+						<input type="checkbox" value="1" name="freejazz" class="checkboxgenre" />
+						<label for="freejazz" class="genrename">jazz</label>
+						<label for="freejazz">free</label>
+					</li>
+					<li class="settings">
+						<input type="checkbox" value="2" name="cooljazz" class="checkboxgenre" />
+						<label for="cooljazz" class="genrename">jazz</label>
+						<label for="cooljazz">cool</label>
+					</li>
+					<li class="settings">
+						<input type="checkbox" value="3" name="bebob" class="checkboxgenre" />
+						<label for="bebob" class="genrename">jazz</label>
+						<label for="bebob">bebob</label>
+					</li>
+					<li class="settings">
+						<input type="checkbox" value="4" name="freehiphop" class="checkboxgenre" />
+						<label for="freehiphop" class="genrename">hiphop</label>
+						<label for="freehiphop">free</label>
+					</li>
+					<li class="settings">
+			    		<input type="submit" value="Save" class="savegenre"/>
+			    	</li>
+			   	</ul>
+			   </form>
+			  </div>
+			  
+			 
+</div>
+
+			
+		</div>
+		<div class="content">
+			<div class="left-content">
+			</div>
+			<div class="middle-content">
+				<h1 style="text-decoration:underline" >ABOUT US</h1>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</div>
+			<div class="right-content">
+				<h1 style="margin-top:32px;text-decoration:underline">Latest Upcoming Events </h1>
+					<h2>New York City Music festival</h2>
+					<h2>November 31 ,2014 </h2>
+					<h2>Venue : Madison Square Garden</h2>
+			</div>
+
+		</div>
+		<div class="footer">
+			<div class="left-content wifooterdthalign">
+				<h1>Subscribe to Us</h1>
+				<a href="mailto:amitk26467@gmail.com">musicalConnections@gmail.com</a>
+			</div>
+			<div class="left-content wifooterdthalign" style="margin-left:0px">
+				<h1>Contact Us</h1>
+				<h2>123-456-7890</h2>
+			</div>
+			<div class="left-content social-network" style="margin-left:0px">
+				<h1>Follow Us</h1>
+				<a href="https://www.facebook.com/Connectionsoriginalmusicall" class="socialnet" style="clear:left"></a>
+				<a href="https://twitter.com/music" class="socialnet twitter"></a>
+				<a href="http://www.youtube.com/user/FlyingBalalaikaBros" class="socialnet youtube"></a>
+			</div>
+			<div class="left-content wifooterdthalign" style="margin-left:0px">
+				<h2 style="margin-top:0px;font-size:14px">Copyrights reserved 2014.</h2>
+				<h2 style="margin-top:5px;font-size:10px">Developed and managed by Amit and Chaithra</h2>
+
+
+			</div>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(e){
+
+		//$( "#editprofiletab" ).accordion();
+
+		$('#editprofile').on('click',function(e){
+
+			$('#concertfeed').hide();
+
+			
+			$('#accordion').show();
+		});
+
+
+
+
+			
+	});
+
+ 
+ 
+</script>
+</html>
